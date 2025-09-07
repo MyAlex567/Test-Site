@@ -1,0 +1,256 @@
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Main-Nav{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, .07);
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.Home-Nav{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0% 15%;
+}
+
+.Home-Nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 1%;
+    box-sizing: border-box;
+    color: #118b2c;
+    font-weight: bold;
+}
+
+.To-right{
+    float: right;
+}
+
+.Address{
+    color: #118b2c;
+    padding: 5px 10px;
+    width: 70%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid hsl(0, 0%, 77%);
+    border-radius: 14px;
+}
+
+.Address input{
+    border-radius: 5px;
+    padding: 15px 5px;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.Front-Img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 14px;
+    margin: 2%;
+}
+
+.FOOD-NAV{
+    width: 100%;
+}
+
+.Front-Img img{
+    width: 50%;
+}
+
+.FOOD-NAV{
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    margin: 2%;
+    background-color: hsla(0, 0%, 88%, 0.242);
+}
+
+.FOOD-NAV li{
+    margin: 0% 1%;
+    border: 2.5px solid transparent;
+    flex-shrink: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.FOOD-NAV ul{
+    font-size: 1rem;
+    list-style-type: none;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+}
+
+.Food-Choice:hover{
+    color: #118b2c;
+    border-bottom: 2.5px solid #118b2c;
+}
+
+.Image-Menu{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+}
+
+.Menu-Category{
+    width: 100%;
+    display: flex;
+}
+
+.MENUS:hover{
+    box-shadow: 0px 8px 10px hsla(0, 0%, 0%, 0.07);
+}
+
+.Image-Menu .Menu-Category .MENUS{
+    font-weight: bold;
+    width: 100%;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 14px;
+    transition: box-shadow 0.3s ease;
+    border: 1px solid hsl(0, 0%, 77%);
+}
+
+.Description{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0% 2%;
+}
+
+.price{
+    bottom: 0px;
+}
+
+.price{
+    color: hsl(120, 84%, 37%);
+    font-weight: bold;
+}
+
+.Image-Menu .Menu-Category .MENUS img{
+    width: 100%;
+}
+
+.Footer{
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    padding: 5% 0%;
+    border-top: 1px solid hsl(0, 0%, 77%);
+}
+
+.Footer .Logos img{
+    width: 20%;
+}
+
+.Details-Foot{
+    display: flex;
+}
+
+.ABOUT{
+    margin: 2% 5%;
+}
+
+.Footer .ABOUT li{
+    list-style-type: none;
+    margin: 10px
+}
+
+.Social-Media{
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Social-Media i{
+    margin: 10px;
+    font-size: 2em;
+}
+
+.ICONS{
+    display: inline;
+}
+
+.Last-Footer{
+    background-color: #118b2c;
+    width: 100%;
+    padding: 2% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    overflow: hidden;
+
+}
+
+.Last-Footer p{
+    color: white;
+    font-Weight: bold;
+}
+
+
+@media(max-width: 768px){
+    .Home-Nav{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0% 1%;
+    }
+
+    .FOOD-NAV{
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .FOOD-NAV ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .FOOD-NAV li{
+        margin-right: 5%;
+    }
+
+    .Image-Menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Menu-Category{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .Image-Menu .Menu-Category .MENUS{
+        width: 80%;
+        padding: 10%;
+    }
+
+    .MENUS img{
+        width: 100%;
+    }
+
+    .Details-Foot{
+        display: block;
+    }
+
+    .Logos img{
+        display: none;
+    }
+}

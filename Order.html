@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Order.css">
+</head>
+<body>
+
+    <div class="Order-Title">
+        <ul class="Order-Nav">
+            <li>Pancake With Strawberry</li>
+            <li><a href="PreLimSite.html" style="text-decoration: none; color: rgb(0, 146, 0)">Back</a></li>
+        </ul>
+    </div>
+
+    <div class="Order-Detail">
+        <div class="Image-Order">
+            <img src="Pictures/Pancake.jpg" alt="">
+            <div class="Small-Image"><img src="Pictures/Pancake.jpg" alt=""></div>
+            <hr  style="border-top: 1px solid hsl(0, 0%, 69%); width: 100%;">
+            <p style="font-weight: bold; text-align: left;">Pancake With Strawberry</p>
+            <p style="text-align: center; color: rgb(102, 102, 102);">Indulge in our Fluffy Pancake with Fresh Strawberries! A sweet and fruity delight you can enjoy for only ₱700!</p>
+        </div>
+        <div class="Side">
+            <div class="Radio">
+                <input type="radio" checked style="accent-color: #13ab34;">
+                <label>Pancake Wth Strawberry</label>
+            </div>
+            <p>&#8369 700.00</p>
+        </div>
+    </div>
+
+   <div class="Controls">
+        <div class="Quantity">
+            <div style="display: flex; margin-right: 2%;">
+                <button class="MINUS">&minus;</button>
+                <input type="number" readonly max="50" min="1" value="1" style="border: 1px solid hsl(0, 0%, 77%);">
+                <button class="PLUS">&plus;</button>
+            </div>
+            <p style="font-weight: bold; margin-right: 0px;">Total &#8369 700.00</p>
+        </div>
+
+        <button class="Cart">Add to My Cart</button>
+   </div>
+    
+    <script src="Order.js"></script>
+</body>
+</html>
